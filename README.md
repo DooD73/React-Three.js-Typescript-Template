@@ -4,13 +4,13 @@
 
 [![Vite](https://img.shields.io/badge/Vite-2.0-green)](https://github.com/vitejs/vite) [![React](https://img.shields.io/badge/React-16.13-blue)](https://reactjs.org/) [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-1.9-purple)](https://tailwindcss.com/) [![React-Three-Fiber](https://img.shields.io/badge/ReactThreeFiber-9.0-blue)](https://github.com/react-spring/react-three-fiber) [![Three.js](https://img.shields.io/badge/Three.js-r135-yellow)](https://threejs.org/) [![Typescript](https://img.shields.io/badge/Typescript-4.1-blue)](https://www.typescriptlang.org/)
 
----
+
 
 ## Description
 This is a starter template for building 3D web applications using Vite, React, React-Three-Fiber, Three.js, and TailwindCSS. The template is set up with a basic file structure and includes the necessary dependencies and configuration to get started quickly. With this template, you can easily create interactive and visually stunning 3D web 
 applications.
 
----
+
 
 ## Table of Contents
 * [Installation](#installation)
@@ -19,7 +19,7 @@ applications.
 * [Authors](#authors)
 * [License](#license)
 
----
+
 
 ## Installation
 1. Clone the repository
@@ -41,7 +41,7 @@ npm run dev
 5. The development will start and you should be able to access the template
 6. You can start building your application by editing the files in the 'src' directory
 
----
+
 
 ## Dependencies
 
@@ -66,7 +66,7 @@ npm run dev
   }
 ```
 
----
+
 
 ## Built With
 * [Vite](https://github.com/vitejs/vite)
@@ -76,12 +76,12 @@ npm run dev
 * [Three.js](https://threejs.org/)
 * [Typescript](https://www.typescriptlang.org/) 
 
----
+
 
 ## Author
 **DooD73** - [Author's GitHub Profile](https://github.com/DooD73)
 
----
+
 
 ## License
 This project is licensed under the terms of the MIT license. See the [LICENSE](https://github.com/DooD73/repo/blob/master/LICENSE) file for more information.
