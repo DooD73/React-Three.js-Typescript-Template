@@ -1,63 +1,34 @@
-import { Suspense, useRef } from "react";
-import { Canvas, useFrame } from "react-three-fiber";
-import { Stats, OrbitControls } from "@react-three/drei";
-import * as three from "three";
-import "./styles.css";
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import './App.css'
 
-const Cube = () => {
-  const cube = useRef<three.Mesh>();
-
-  useFrame(() => {
-    cube.current!.rotation.x += 0.01;
-    cube.current!.rotation.y += 0.01;
-  });
+function App() {
+  const [count, setCount] = useState(0)
 
   return (
-    <mesh ref={cube}>
-      <boxBufferGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color="#0391BA" />
-    </mesh>
-  );
-};
-
-const Scene = () => {
-  return (
-    <>
-      <gridHelper />
-      <axesHelper />
-      <pointLight intensity={1.0} position={[5, 3, 5]} />
-      <Cube />
-    </>
-  );
-};
-
-const App = () => {
-  return (
-    <div
-      style={{
-        height: "100vh",
-        width: "100vw",
-      }}
-    >
-      <Canvas
-        concurrent
-        camera={{
-          near: 0.1,
-          far: 1000,
-          zoom: 1,
-        }}
-        onCreated={({ gl }) => {
-          gl.setClearColor("#252934");
-        }}
-      >
-        <Stats />
-        <OrbitControls />
-        <Suspense fallback={null}>
-          <Scene />
-        </Suspense>
-      </Canvas>
+    <div className="App">
+      <div>
+        <a href="https://vitejs.dev" target="_blank">
+          <img src="/vite.svg" className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://reactjs.org" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.tsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
